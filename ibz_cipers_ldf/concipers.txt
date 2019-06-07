@@ -1,0 +1,4 @@
+cip_host;mallorca
+cip_database;RAPFIRDEV
+cip_username;irapport
+cip_password;irapport

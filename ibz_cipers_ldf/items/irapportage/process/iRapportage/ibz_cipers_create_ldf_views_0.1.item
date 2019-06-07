@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="mks_database" prompt="mks_database?" promptNeeded="false" repositoryContextId="_JxGTYChTEei_k4KE4mLHuw" type="id_String" value=""/>
+    <contextParameter comment="" name="mks_host" prompt="mks_host?" promptNeeded="false" repositoryContextId="_JxGTYChTEei_k4KE4mLHuw" type="id_String" value=""/>
+    <contextParameter comment="" name="mks_port" prompt="mks_port?" promptNeeded="false" repositoryContextId="_JxGTYChTEei_k4KE4mLHuw" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Toolkit/Talend/TOS_DI-Win32-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_k5s5sB0hEeiJj6FRom0ntA" name="DataOperation"/>
+    <routinesParameter id="_k7jT0B0hEeiJj6FRom0ntA" name="GeoOperation"/>
+    <routinesParameter id="_k7QY4B0hEeiJj6FRom0ntA" name="GeometryOperation"/>
+    <routinesParameter id="_k7Zi0B0hEeiJj6FRom0ntA" name="GeometryUtility"/>
+    <routinesParameter id="_k6KzwB0hEeiJj6FRom0ntA" name="Mathematical"/>
+    <routinesParameter id="_k6VL0B0hEeiJj6FRom0ntA" name="Numeric"/>
+    <routinesParameter id="_k7tE0B0hEeiJj6FRom0ntA" name="OpenStreetMap"/>
+    <routinesParameter id="_k6iAIB0hEeiJj6FRom0ntA" name="Relational"/>
+    <routinesParameter id="_k6s_QB0hEeiJj6FRom0ntA" name="StringHandling"/>
+    <routinesParameter id="_k607EB0hEeiJj6FRom0ntA" name="TalendDataGenerator"/>
+    <routinesParameter id="_k6_TIB0hEeiJj6FRom0ntA" name="TalendDate"/>
+    <routinesParameter id="_k7H2AB0hEeiJj6FRom0ntA" name="TalendString"/>
+    <routinesParameter id="_jUuL4Mj1EealWscCbXXrNw" name="CustomSettings"/>
+    <routinesParameter id="_NWRr0Do5EeeAoLtST_DMPA" name="PasswordReader"/>
+    <routinesParameter id="_qngTsMhKEea9wdvANhjoQQ" name="Settings"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./conmks.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_BUnkkCOYEei_WvutFNx4DA - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Toolkit/Talend/TOS_DI-Win32-20161216_1026-V6.3.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="20" name="key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="20" name="key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_2">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_personen" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_personen as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;0 as prsSleutelGeldigDatum,&#xD;&#xA;0 as prsSleutelGeldigVolgnummer,&#xD;&#xA;prsBurgerservicenummer,&#xD;&#xA;prsVoornamen,&#xD;&#xA;prsEersteVoornaam,&#xD;&#xA;prsVoorletters,&#xD;&#xA;prsAdellijketitelCode,&#xD;&#xA;prsAdellijketitelOmschrijving,&#xD;&#xA;prsVoorvoegselGeslachtsnaam,&#xD;&#xA;prsGeslachtsnaam,&#xD;&#xA;prsNaamOpgemaakt,&#xD;&#xA;prsGeboortedatum,&#xD;&#xA;prsGeboortedatumIndicator,&#xD;&#xA;prsGeboorteplaatsCode,&#xD;&#xA;prsGeboorteplaatsOmschrijving,&#xD;&#xA;prsGeboortelandCode,&#xD;&#xA;prsGeboortelandOmschrijving,&#xD;&#xA;prsGeslachtsaanduidingCode,&#xD;&#xA;prsGeslachtsaanduidingOmschrijving,&#xD;&#xA;prsVorigAnummer,&#xD;&#xA;prsVolgendAnummer,&#xD;&#xA;prsAanduidingNaamgebruik,&#xD;&#xA;prsRegistergemeenteAkteCode,&#xD;&#xA;prsRegistergemeenteAkteOmschrijving,&#xD;&#xA;prsAktenummer,&#xD;&#xA;prsGemeenteDocumentCode,&#xD;&#xA;prsGemeenteDocumentOmschrijving,&#xD;&#xA;prsDatumDocument,&#xD;&#xA;prsDatumDocumentIndicator,&#xD;&#xA;prsBeschrijvingDocument,&#xD;&#xA;prsAanduidingGegevensOnderzoek,&#xD;&#xA;prsDatumIngangOnderzoek,&#xD;&#xA;prsDatumIngangOnderzoekIndicator,&#xD;&#xA;prsDatumEindeOnderzoek,&#xD;&#xA;prsDatumEindeOnderzoekIndicator,&#xD;&#xA;prsIngangsdatumGeldigheid,&#xD;&#xA;prsIngangsdatumGeldigheidIndicator,&#xD;&#xA;prsDatumVanOpneming,&#xD;&#xA;prsDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prshstAnummer as prsAnummer,&#xD;&#xA;prshstSleutelGeldigDatum as prsSleutelGeldigDatum,&#xD;&#xA;prshstSleutelGeldigVolgnummer as prsSleutelGeldigVolgnummer,&#xD;&#xA;prshstBurgerservicenummer as prsBurgerservicenummer,&#xD;&#xA;prshstVoornamen as prsVoornamen,&#xD;&#xA;null as prsEersteVoornaam,&#xD;&#xA;prshstVoorletters as prsVoorletters,&#xD;&#xA;prshstAdellijketitelCode as prsAdellijketitelCode,&#xD;&#xA;prshstAdellijketitelOmschrijving as prsAdellijketitelOmschrijving,&#xD;&#xA;prshstVoorvoegselGeslachtsnaam as prsVoorvoegselGeslachtsnaam,&#xD;&#xA;prshstGeslachtsnaam as prsGeslachtsnaam,&#xD;&#xA;null as prsNaamOpgemaakt,&#xD;&#xA;prshstGeboortedatum as prsGeboortedatum,&#xD;&#xA;prshstGeboortedatumIndicator as prsGeboortedatumIndicator,&#xD;&#xA;prshstGeboorteplaatsCode as prsGeboorteplaatsCode,&#xD;&#xA;prshstGeboorteplaatsOmschrijving as prsGeboorteplaatsOmschrijving,&#xD;&#xA;prshstGeboortelandCode as prsGeboortelandCode,&#xD;&#xA;prshstGeboortelandOmschrijving as prsGeboortelandOmschrijving,&#xD;&#xA;prshstGeslachtsaanduidingCode as prsGeslachtsaanduidingCode,&#xD;&#xA;prshstGeslachtsaanduidingOmschrijving as prsGeslachtsaanduidingOmschrijving,&#xD;&#xA;prshstVorigAnummer as prsVorigAnummer,&#xD;&#xA;prshstVolgendAnummer as prsVolgendAnummer,&#xD;&#xA;prshstAanduidingNaamgebruik as prsAanduidingNaamgebruik,&#xD;&#xA;prshstRegistergemeenteAkteCode as prsRegistergemeenteAkteCode,&#xD;&#xA;prshstRegistergemeenteAkteOmschrijving as prsRegistergemeenteAkteOmschrijving,&#xD;&#xA;prshstAktenummer as prsAktenummer,&#xD;&#xA;prshstGemeenteDocumentCode as prsGemeenteDocumentCode,&#xD;&#xA;prshstGemeenteDocumentOmschrijving as prsGemeenteDocumentOmschrijving,&#xD;&#xA;prshstDatumDocument as prsDatumDocument,&#xD;&#xA;prshstDatumDocumentIndicator as prsDatumDocumentIndicator,&#xD;&#xA;prshstBeschrijvingDocument as prsBeschrijvingDocument,&#xD;&#xA;prshstAanduidingGegevensOnderzoek as prsAanduidingGegevensOnderzoek,&#xD;&#xA;prshstDatumIngangOnderzoek as prsDatumIngangOnderzoek,&#xD;&#xA;prshstDatumIngangOnderzoekIndicator as prsDatumIngangOnderzoekIndicator,&#xD;&#xA;prshstDatumEindeOnderzoek as prsDatumEindeOnderzoek,&#xD;&#xA;prshstDatumEindeOnderzoekIndicator as prsDatumEindeOnderzoekIndicator,&#xD;&#xA;prshstIngangsdatumGeldigheid as prsIngangsdatumGeldigheid,&#xD;&#xA;prshstIngangsdatumGeldigheidIndicator as prsIngangsdatumGeldigheidIndicator,&#xD;&#xA;prshstDatumVanOpneming as prsDatumVanOpneming,&#xD;&#xA;prshstDatumVanOpnemingIndicator as prsDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon_historie&#xD;&#xA;order by prsAnummer, prsSleutelGeldigDatum, prsSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_ouders1" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_ouders1 as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;0 as ou1SleutelGeldigDatum,&#xD;&#xA;0 as ou1SleutelGeldigVolgnummer,&#xD;&#xA;ou1Anummer,&#xD;&#xA;ou1Burgerservicenummer,&#xD;&#xA;ou1Voornamen,&#xD;&#xA;ou1Voorletters,&#xD;&#xA;ou1AdellijketitelCode,&#xD;&#xA;ou1AdellijketitelOmschrijving,&#xD;&#xA;ou1VoorvoegselGeslachtsnaam,&#xD;&#xA;ou1Geslachtsnaam,&#xD;&#xA;ou1NaamOpgemaakt,&#xD;&#xA;ou1Geboortedatum,&#xD;&#xA;ou1GeboortedatumIndicator,&#xD;&#xA;ou1GeboorteplaatsCode,&#xD;&#xA;ou1GeboorteplaatsOmschrijving,&#xD;&#xA;ou1GeboortelandCode,&#xD;&#xA;ou1GeboortelandOmschrijving,&#xD;&#xA;ou1GeslachtsaanduidingCode,&#xD;&#xA;ou1GeslachtsaanduidingOmschrijving,&#xD;&#xA;ou1DatumIngangFamilierechtelijkeBetrekking,&#xD;&#xA;ou1DatumIngangFamilierechtelijkeBetrekkingIndicator,&#xD;&#xA;ou1RegistergemeenteAkteCode,&#xD;&#xA;ou1RegistergemeenteAkteOmschrijving,&#xD;&#xA;ou1Aktenummer,&#xD;&#xA;ou1GemeenteDocumentCode,&#xD;&#xA;ou1GemeenteDocumentOmschrijving,&#xD;&#xA;ou1DatumDocument,&#xD;&#xA;ou1DatumDocumentIndicator,&#xD;&#xA;ou1BeschrijvingDocument,&#xD;&#xA;ou1AanduidingGegevensOnderzoek,&#xD;&#xA;ou1DatumIngangOnderzoek,&#xD;&#xA;ou1DatumIngangOnderzoekIndicator,&#xD;&#xA;ou1DatumEindeOnderzoek,&#xD;&#xA;ou1DatumEindeOnderzoekIndicator,&#xD;&#xA;ou1IngangsdatumGeldigheid,&#xD;&#xA;ou1IngangsdatumGeldigheidIndicator,&#xD;&#xA;ou1DatumVanOpneming,&#xD;&#xA;ou1DatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;ou1hstSleutelGeldigDatum as ou1SleutelGeldigDatum,&#xD;&#xA;ou1hstSleutelGeldigVolgnummer as ou1SleutelGeldigVolgnummer,&#xD;&#xA;ou1hstAnummer as ou1Anummer,&#xD;&#xA;ou1hstBurgerservicenummer as ou1Burgerservicenummer,&#xD;&#xA;ou1hstVoornamen as ou1Voornamen,&#xD;&#xA;ou1hstVoorletters as ou1Voorletters,&#xD;&#xA;ou1hstAdellijketitelCode as ou1AdellijketitelCode,&#xD;&#xA;ou1hstAdellijketitelOmschrijving as ou1AdellijketitelOmschrijving,&#xD;&#xA;ou1hstVoorvoegselGeslachtsnaam as ou1VoorvoegselGeslachtsnaam,&#xD;&#xA;ou1hstGeslachtsnaam as ou1Geslachtsnaam,&#xD;&#xA;null as ou1NaamOpgemaakt,&#xD;&#xA;ou1hstGeboortedatum as ou1Geboortedatum,&#xD;&#xA;ou1hstGeboortedatumIndicator as ou1GeboortedatumIndicator,&#xD;&#xA;ou1hstGeboorteplaatsCode as ou1GeboorteplaatsCode,&#xD;&#xA;ou1hstGeboorteplaatsOmschrijving as ou1GeboorteplaatsOmschrijving,&#xD;&#xA;ou1hstGeboortelandCode as ou1GeboortelandCode,&#xD;&#xA;ou1hstGeboortelandOmschrijving as ou1GeboortelandOmschrijving,&#xD;&#xA;ou1hstGeslachtsaanduidingCode as ou1GeslachtsaanduidingCode,&#xD;&#xA;ou1hstGeslachtsaanduidingOmschrijving as ou1GeslachtsaanduidingOmschrijving,&#xD;&#xA;ou1hstDatumIngangFamilierechtelijkeBetrekking as ou1DatumIngangFamilierechtelijkeBetrekking,&#xD;&#xA;ou1hstDatumIngangFamilierechtelijkeBetrekkingIndicator as &#xA; ou1DatumIngangFamilierechtelijkeBetrekkingIndicator,&#xD;&#xA;ou1hstRegistergemeenteAkteCode as ou1RegistergemeenteAkteCode,&#xD;&#xA;ou1hstRegistergemeenteAkteOmschrijving as ou1RegistergemeenteAkteOmschrijving,&#xD;&#xA;ou1hstAktenummer as ou1Aktenummer,&#xD;&#xA;ou1hstGemeenteDocumentCode as ou1GemeenteDocumentCode,&#xD;&#xA;ou1hstGemeenteDocumentOmschrijving as ou1GemeenteDocumentOmschrijving,&#xD;&#xA;ou1hstDatumDocument as ou1DatumDocument,&#xD;&#xA;ou1hstDatumDocumentIndicator as ou1DatumDocumentIndicator,&#xD;&#xA;ou1hstBeschrijvingDocument as ou1BeschrijvingDocument,&#xD;&#xA;ou1hstAanduidingGegevensOnderzoek as ou1AanduidingGegevensOnderzoek,&#xD;&#xA;ou1hstDatumIngangOnderzoek as ou1DatumIngangOnderzoek,&#xD;&#xA;ou1hstDatumIngangOnderzoekIndicator as ou1DatumIngangOnderzoekIndicator,&#xD;&#xA;ou1hstDatumEindeOnderzoek as ou1DatumEindeOnderzoek,&#xD;&#xA;ou1hstDatumEindeOnderzoekIndicator as ou1DatumEindeOnderzoekIndicator,&#xD;&#xA;ou1hstIngangsdatumGeldigheid as ou1IngangsdatumGeldigheid,&#xD;&#xA;ou1hstIngangsdatumGeldigheidIndicator as ou1IngangsdatumGeldigheidIndicator,&#xD;&#xA;ou1hstDatumVanOpneming as ou1DatumVanOpneming,&#xD;&#xA;ou1hstDatumVanOpnemingIndicator as ou1DatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_ouder1_historie&#xD;&#xA;order by prsAnummer, ou1SleutelGeldigDatum, ou1SleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_ouders2" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_ouders2 as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;0 as ou2SleutelGeldigDatum,&#xD;&#xA;0 as ou2SleutelGeldigVolgnummer,&#xD;&#xA;ou2Anummer,&#xD;&#xA;ou2Burgerservicenummer,&#xD;&#xA;ou2Voornamen,&#xD;&#xA;ou2Voorletters,&#xD;&#xA;ou2AdellijketitelCode,&#xD;&#xA;ou2AdellijketitelOmschrijving,&#xD;&#xA;ou2VoorvoegselGeslachtsnaam,&#xD;&#xA;ou2Geslachtsnaam,&#xD;&#xA;ou2NaamOpgemaakt,&#xD;&#xA;ou2Geboortedatum,&#xD;&#xA;ou2GeboortedatumIndicator,&#xD;&#xA;ou2GeboorteplaatsCode,&#xD;&#xA;ou2GeboorteplaatsOmschrijving,&#xD;&#xA;ou2GeboortelandCode,&#xD;&#xA;ou2GeboortelandOmschrijving,&#xD;&#xA;ou2GeslachtsaanduidingCode,&#xD;&#xA;ou2GeslachtsaanduidingOmschrijving,&#xD;&#xA;ou2DatumIngangFamilierechtelijkeBetrekking,&#xD;&#xA;ou2DatumIngangFamilierechtelijkeBetrekkingIndicator,&#xD;&#xA;ou2RegistergemeenteAkteCode,&#xD;&#xA;ou2RegistergemeenteAkteOmschrijving,&#xD;&#xA;ou2Aktenummer,&#xD;&#xA;ou2GemeenteDocumentCode,&#xD;&#xA;ou2GemeenteDocumentOmschrijving,&#xD;&#xA;ou2DatumDocument,&#xD;&#xA;ou2DatumDocumentIndicator,&#xD;&#xA;ou2BeschrijvingDocument,&#xD;&#xA;ou2AanduidingGegevensOnderzoek,&#xD;&#xA;ou2DatumIngangOnderzoek,&#xD;&#xA;ou2DatumIngangOnderzoekIndicator,&#xD;&#xA;ou2DatumEindeOnderzoek,&#xD;&#xA;ou2DatumEindeOnderzoekIndicator,&#xD;&#xA;ou2IngangsdatumGeldigheid,&#xD;&#xA;ou2IngangsdatumGeldigheidIndicator,&#xD;&#xA;ou2DatumVanOpneming,&#xD;&#xA;ou2DatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;ou2hstSleutelGeldigDatum as ou2SleutelGeldigDatum,&#xD;&#xA;ou2hstSleutelGeldigVolgnummer as ou2SleutelGeldigVolgnummer,&#xD;&#xA;ou2hstAnummer as ou2Anummer,&#xD;&#xA;ou2hstBurgerservicenummer as ou2Burgerservicenummer,&#xD;&#xA;ou2hstVoornamen as ou2Voornamen,&#xD;&#xA;ou2hstVoorletters as ou2Voorletters,&#xD;&#xA;ou2hstAdellijketitelCode as ou2AdellijketitelCode,&#xD;&#xA;ou2hstAdellijketitelOmschrijving as ou2AdellijketitelOmschrijving,&#xD;&#xA;ou2hstVoorvoegselGeslachtsnaam as ou2VoorvoegselGeslachtsnaam,&#xD;&#xA;ou2hstGeslachtsnaam as ou2Geslachtsnaam,&#xD;&#xA;null as ou2NaamOpgemaakt,&#xD;&#xA;ou2hstGeboortedatum as ou2Geboortedatum,&#xD;&#xA;ou2hstGeboortedatumIndicator as ou2GeboortedatumIndicator,&#xD;&#xA;ou2hstGeboorteplaatsCode as ou2GeboorteplaatsCode,&#xD;&#xA;ou2hstGeboorteplaatsOmschrijving as ou2GeboorteplaatsOmschrijving,&#xD;&#xA;ou2hstGeboortelandCode as ou2GeboortelandCode,&#xD;&#xA;ou2hstGeboortelandOmschrijving as ou2GeboortelandOmschrijving,&#xD;&#xA;ou2hstGeslachtsaanduidingCode as ou2GeslachtsaanduidingCode,&#xD;&#xA;ou2hstGeslachtsaanduidingOmschrijving as ou2GeslachtsaanduidingOmschrijving,&#xD;&#xA;ou2hstDatumIngangFamilierechtelijkeBetrekking as ou2DatumIngangFamilierechtelijkeBetrekking,&#xD;&#xA;ou2hstDatumIngangFamilierechtelijkeBetrekkingIndicator as &#xA; ou2DatumIngangFamilierechtelijkeBetrekkingIndicator,&#xD;&#xA;ou2hstRegistergemeenteAkteCode as ou2RegistergemeenteAkteCode,&#xD;&#xA;ou2hstRegistergemeenteAkteOmschrijving as ou2RegistergemeenteAkteOmschrijving,&#xD;&#xA;ou2hstAktenummer as ou2Aktenummer,&#xD;&#xA;ou2hstGemeenteDocumentCode as ou2GemeenteDocumentCode,&#xD;&#xA;ou2hstGemeenteDocumentOmschrijving as ou2GemeenteDocumentOmschrijving,&#xD;&#xA;ou2hstDatumDocument as ou2DatumDocument,&#xD;&#xA;ou2hstDatumDocumentIndicator as ou2DatumDocumentIndicator,&#xD;&#xA;ou2hstBeschrijvingDocument as ou2BeschrijvingDocument,&#xD;&#xA;ou2hstAanduidingGegevensOnderzoek as ou2AanduidingGegevensOnderzoek,&#xD;&#xA;ou2hstDatumIngangOnderzoek as ou2DatumIngangOnderzoek,&#xD;&#xA;ou2hstDatumIngangOnderzoekIndicator as ou2DatumIngangOnderzoekIndicator,&#xD;&#xA;ou2hstDatumEindeOnderzoek as ou2DatumEindeOnderzoek,&#xD;&#xA;ou2hstDatumEindeOnderzoekIndicator as ou2DatumEindeOnderzoekIndicator,&#xD;&#xA;ou2hstIngangsdatumGeldigheid as ou2IngangsdatumGeldigheid,&#xD;&#xA;ou2hstIngangsdatumGeldigheidIndicator as ou2IngangsdatumGeldigheidIndicator,&#xD;&#xA;ou2hstDatumVanOpneming as ou2DatumVanOpneming,&#xD;&#xA;ou2hstDatumVanOpnemingIndicator as ou2DatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_ouder2_historie&#xD;&#xA;order by prsAnummer, ou2SleutelGeldigDatum, ou2SleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_nationaliteiten" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_nationaliteiten as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;natSleutelNationaliteitCode,&#xD;&#xA;natSleutelVolgnummer,&#xD;&#xA;0 as natSleutelGeldigDatum,&#xD;&#xA;0 as natSleutelGeldigVolgnummer,&#xD;&#xA;natNationaliteitCode,&#xD;&#xA;natNationaliteitVervallen,&#xD;&#xA;natNationaliteitOmschrijving,&#xD;&#xA;natRedenOpnameNationaliteitCode,&#xD;&#xA;natRedenOpnameNationaliteitOmschrijving,&#xD;&#xA;natRedenBeeindigenNationaliteitCode,&#xD;&#xA;natRedenBeeindigenNationaliteitOmschrijving,&#xD;&#xA;natAanduidingBijzonderNederlanderschap,&#xD;&#xA;natEUPersoonsnummer,&#xD;&#xA;natGemeenteDocumentCode,&#xD;&#xA;natGemeenteDocumentOmschrijving,&#xD;&#xA;natDatumDocument,&#xD;&#xA;natDatumDocumentIndicator,&#xD;&#xA;natBeschrijvingDocument,&#xD;&#xA;natAanduidingGegevensOnderzoek,&#xD;&#xA;natDatumIngangOnderzoek,&#xD;&#xA;natDatumIngangOnderzoekIndicator,&#xD;&#xA;natDatumEindeOnderzoek,&#xD;&#xA;natDatumEindeOnderzoekIndicator,&#xD;&#xA;natIngangsdatumGeldigheid,&#xD;&#xA;natIngangsdatumGeldigheidIndicator,&#xD;&#xA;natDatumVanOpneming,&#xD;&#xA;natDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_nationaliteit union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;nathstSleutelNationaliteitCode as natSleutelNationaliteitCode,&#xD;&#xA;nathstSleutelVolgnummer as natSleutelVolgnummer,&#xD;&#xA;nathstSleutelGeldigDatum as natSleutelGeldigDatum,&#xD;&#xA;nathstSleutelGeldigVolgnummer as natSleutelGeldigVolgnummer,&#xD;&#xA;nathstNationaliteitCode as natNationaliteitCode,&#xD;&#xA;nathstNationaliteitVervallen as natNationaliteitVervallen,&#xD;&#xA;nathstNationaliteitOmschrijving as natNationaliteitOmschrijving,&#xD;&#xA;nathstRedenOpnameNationaliteitCode as natRedenOpnameNationaliteitCode,&#xD;&#xA;nathstRedenOpnameNationaliteitOmschrijving as natRedenOpnameNationaliteitOmschrijving,&#xD;&#xA;nathstRedenBeeindigenNationaliteitCode as natRedenBeeindigenNationaliteitCode,&#xD;&#xA;nathstRedenBeeindigenNationaliteitOmschrijving as natRedenBeeindigenNationaliteitOmschrijving,&#xD;&#xA;nathstAanduidingBijzonderNederlanderschap as natAanduidingBijzonderNederlanderschap,&#xD;&#xA;nathstEUPersoonsnummer as natEUPersoonsnummer,&#xD;&#xA;nathstGemeenteDocumentCode as natGemeenteDocumentCode,&#xD;&#xA;nathstGemeenteDocumentOmschrijving as natGemeenteDocumentOmschrijving,&#xD;&#xA;nathstDatumDocument as natDatumDocument,&#xD;&#xA;nathstDatumDocumentIndicator as natDatumDocumentIndicator,&#xD;&#xA;nathstBeschrijvingDocument as natBeschrijvingDocument,&#xD;&#xA;nathstAanduidingGegevensOnderzoek as natAanduidingGegevensOnderzoek,&#xD;&#xA;nathstDatumIngangOnderzoek as natDatumIngangOnderzoek,&#xD;&#xA;nathstDatumIngangOnderzoekIndicator as natDatumIngangOnderzoekIndicator,&#xD;&#xA;nathstDatumEindeOnderzoek as natDatumEindeOnderzoek,&#xD;&#xA;nathstDatumEindeOnderzoekIndicator as natDatumEindeOnderzoekIndicator,&#xD;&#xA;nathstIngangsdatumGeldigheid as natIngangsdatumGeldigheid,&#xD;&#xA;nathstIngangsdatumGeldigheidIndicator as natIngangsdatumGeldigheidIndicator,&#xD;&#xA;nathstDatumVanOpneming as natDatumVanOpneming,&#xD;&#xA;nathstDatumVanOpnemingIndicator as natDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_nationaliteit_historie&#xD;&#xA;order by prsAnummer, natSleutelNationaliteitCode, natSleutelVolgnummer, natSleutelGeldigDatum,&#xA;  natSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_4"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_huwelijken" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_huwelijken as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;huwSleutelDatum,&#xD;&#xA;huwSleutelVolgnummer,&#xD;&#xA;0 as huwSleutelGeldigDatum,&#xD;&#xA;0 as huwSleutelGeldigVolgnummer,&#xD;&#xA;huwAnummer,&#xD;&#xA;huwBurgerservicenummer,&#xD;&#xA;huwVoornamen,&#xD;&#xA;huwVoorletters,&#xD;&#xA;huwAdellijketitelCode,&#xD;&#xA;huwAdellijketitelOmschrijving,&#xD;&#xA;huwVoorvoegselGeslachtsnaam,&#xD;&#xA;huwGeslachtsnaam,&#xD;&#xA;huwNaamOpgemaakt,&#xD;&#xA;huwGeboortedatum,&#xD;&#xA;huwGeboortedatumIndicator,&#xD;&#xA;huwGeboorteplaatsCode,&#xD;&#xA;huwGeboorteplaatsOmschrijving,&#xD;&#xA;huwGeboortelandCode,&#xD;&#xA;huwGeboortelandOmschrijving,&#xD;&#xA;huwGeslachtsaanduidingCode,&#xD;&#xA;huwGeslachtsaanduidingOmschrijving,&#xD;&#xA;case when huwRedenOntbindingHuwelijkPartnerschap is null &#xD;&#xA;  then huwDatumSluitingHuwelijkPartnerschap &#xD;&#xA;  else null &#xD;&#xA;end as huwDatumSluitingHuwelijkPartnerschap,&#xD;&#xA;case when huwRedenOntbindingHuwelijkPartnerschap is null &#xD;&#xA;  then huwDatumSluitingHuwelijkPartnerschapIndicator &#xD;&#xA;  else null &#xD;&#xA;end as huwDatumSluitingHuwelijkPartnerschapIndicator,&#xD;&#xA;case when huwRedenOntbindingHuwelijkPartnerschap is null &#xD;&#xA;  then huwPlaatsSluitingHuwelijkPartnerschapCode &#xD;&#xA;  else null &#xD;&#xA;end as huwPlaatsSluitingHuwelijkPartnerschapCode,&#xD;&#xA;case when huwRedenOntbindingHuwelijkPartnerschap is null &#xD;&#xA;  then huwPlaatsSluitingHuwelijkPartnerschapOmschrijving &#xD;&#xA;  else null &#xD;&#xA;end as huwPlaatsSluitingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;case when huwRedenOntbindingHuwelijkPartnerschap is null &#xD;&#xA;  then huwLandSluitingHuwelijkPartnerschapCode &#xD;&#xA;  else null &#xD;&#xA;end as huwLandSluitingHuwelijkPartnerschapCode,&#xD;&#xA;case when huwRedenOntbindingHuwelijkPartnerschap is null &#xD;&#xA;  then huwLandSluitingHuwelijkPartnerschapOmschrijving &#xD;&#xA;  else null &#xD;&#xA;end as huwLandSluitingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwDatumOntbindingHuwelijkPartnerschap,&#xD;&#xA;huwDatumOntbindingHuwelijkPartnerschapIndicator,&#xD;&#xA;huwPlaatsOntbindingHuwelijkPartnerschapCode,&#xD;&#xA;huwPlaatsOntbindingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwLandOntbindingHuwelijkPartnerschapCode,&#xD;&#xA;huwLandOntbindingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwRedenOntbindingHuwelijkPartnerschap,&#xD;&#xA;huwSoortVerbintenis,&#xD;&#xA;huwRegistergemeenteAkteCode,&#xD;&#xA;huwRegistergemeenteAkteOmschrijving,&#xD;&#xA;huwAktenummer,&#xD;&#xA;huwGemeenteDocumentCode,&#xD;&#xA;huwGemeenteDocumentOmschrijving,&#xD;&#xA;huwDatumDocument,&#xD;&#xA;huwDatumDocumentIndicator,&#xD;&#xA;huwBeschrijvingDocument,&#xD;&#xA;huwAanduidingGegevensOnderzoek,&#xD;&#xA;huwDatumIngangOnderzoek,&#xD;&#xA;huwDatumIngangOnderzoekIndicator,&#xD;&#xA;huwDatumEindeOnderzoek,&#xD;&#xA;huwDatumEindeOnderzoekIndicator,&#xD;&#xA;huwIngangsdatumGeldigheid,&#xD;&#xA;huwIngangsdatumGeldigheidIndicator,&#xD;&#xA;huwDatumVanOpneming,&#xD;&#xA;huwDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_huwelijk union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;huwhstSleutelDatum as huwSleutelDatum,&#xD;&#xA;huwhstSleutelVolgnummer as huwSleutelVolgnummer,&#xD;&#xA;huwhstSleutelGeldigDatum as huwSleutelGeldigDatum,&#xD;&#xA;huwhstSleutelGeldigVolgnummer as huwSleutelGeldigVolgnummer,&#xD;&#xA;huwhstAnummer as huwAnummer,&#xD;&#xA;huwhstBurgerservicenummer as huwBurgerservicenummer,&#xD;&#xA;huwhstVoornamen as huwVoornamen,&#xD;&#xA;huwhstVoorletters as huwVoorletters,&#xD;&#xA;huwhstAdellijketitelCode as huwAdellijketitelCode,&#xD;&#xA;huwhstAdellijketitelOmschrijving as huwAdellijketitelOmschrijving,&#xD;&#xA;huwhstVoorvoegselGeslachtsnaam as huwVoorvoegselGeslachtsnaam,&#xD;&#xA;huwhstGeslachtsnaam as huwGeslachtsnaam,&#xD;&#xA;null as huwNaamOpgemaakt,&#xD;&#xA;huwhstGeboortedatum as huwGeboortedatum,&#xD;&#xA;huwhstGeboortedatumIndicator as huwGeboortedatumIndicator,&#xD;&#xA;huwhstGeboorteplaatsCode as huwGeboorteplaatsCode,&#xD;&#xA;huwhstGeboorteplaatsOmschrijving as huwGeboorteplaatsOmschrijving,&#xD;&#xA;huwhstGeboortelandCode as huwGeboortelandCode,&#xD;&#xA;huwhstGeboortelandOmschrijving as huwGeboortelandOmschrijving,&#xD;&#xA;huwhstGeslachtsaanduidingCode as huwGeslachtsaanduidingCode,&#xD;&#xA;huwhstGeslachtsaanduidingOmschrijving as huwGeslachtsaanduidingOmschrijving,&#xD;&#xA;huwhstDatumSluitingHuwelijkPartnerschap as huwDatumSluitingHuwelijkPartnerschap,&#xD;&#xA;huwhstDatumSluitingHuwelijkPartnerschapIndicator as huwDatumSluitingHuwelijkPartnerschapIndicator,&#xD;&#xA;huwhstPlaatsSluitingHuwelijkPartnerschapCode as huwPlaatsSluitingHuwelijkPartnerschapCode,&#xD;&#xA;huwhstPlaatsSluitingHuwelijkPartnerschapOmschrijving as &#xA; huwPlaatsSluitingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwhstLandSluitingHuwelijkPartnerschapCode as huwLandSluitingHuwelijkPartnerschapCode,&#xD;&#xA;huwhstLandSluitingHuwelijkPartnerschapOmschrijving as &#xA; huwLandSluitingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwhstDatumOntbindingHuwelijkPartnerschap as huwDatumOntbindingHuwelijkPartnerschap,&#xD;&#xA;huwhstDatumOntbindingHuwelijkPartnerschapIndicator as &#xA; huwDatumOntbindingHuwelijkPartnerschapIndicator,&#xD;&#xA;huwhstPlaatsOntbindingHuwelijkPartnerschapCode as huwPlaatsOntbindingHuwelijkPartnerschapCode,&#xD;&#xA;huwhstPlaatsOntbindingHuwelijkPartnerschapOmschrijving as &#xA; huwPlaatsOntbindingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwhstLandOntbindingHuwelijkPartnerschapCode as huwLandOntbindingHuwelijkPartnerschapCode,&#xD;&#xA;huwhstLandOntbindingHuwelijkPartnerschapOmschrijving as &#xA; huwLandOntbindingHuwelijkPartnerschapOmschrijving,&#xD;&#xA;huwhstRedenOntbindingHuwelijkPartnerschap as huwRedenOntbindingHuwelijkPartnerschap,&#xD;&#xA;huwhstSoortVerbintenis as huwSoortVerbintenis,&#xD;&#xA;huwhstRegistergemeenteAkteCode as huwRegistergemeenteAkteCode,&#xD;&#xA;huwhstRegistergemeenteAkteOmschrijving as huwRegistergemeenteAkteOmschrijving,&#xD;&#xA;huwhstAktenummer as huwAktenummer,&#xD;&#xA;huwhstGemeenteDocumentCode as huwGemeenteDocumentCode,&#xD;&#xA;huwhstGemeenteDocumentOmschrijving as huwGemeenteDocumentOmschrijving,&#xD;&#xA;huwhstDatumDocument as huwDatumDocument,&#xD;&#xA;huwhstDatumDocumentIndicator as huwDatumDocumentIndicator,&#xD;&#xA;huwhstBeschrijvingDocument as huwBeschrijvingDocument,&#xD;&#xA;huwhstAanduidingGegevensOnderzoek as huwAanduidingGegevensOnderzoek,&#xD;&#xA;huwhstDatumIngangOnderzoek as huwDatumIngangOnderzoek,&#xD;&#xA;huwhstDatumIngangOnderzoekIndicator as huwDatumIngangOnderzoekIndicator,&#xD;&#xA;huwhstDatumEindeOnderzoek as huwDatumEindeOnderzoek,&#xD;&#xA;huwhstDatumEindeOnderzoekIndicator as huwDatumEindeOnderzoekIndicator,&#xD;&#xA;huwhstIngangsdatumGeldigheid as huwIngangsdatumGeldigheid,&#xD;&#xA;huwhstIngangsdatumGeldigheidIndicator as huwIngangsdatumGeldigheidIndicator,&#xD;&#xA;huwhstDatumVanOpneming as huwDatumVanOpneming,&#xD;&#xA;huwhstDatumVanOpnemingIndicator as huwDatumVanOpnemingIndicator&#xD;&#xA;  from  ldf.ibz_cip_huwelijk_historie&#xD;&#xA;order by prsAnummer, huwSleutelDatum, huwSleutelVolgnummer, huwSleutelGeldigDatum,&#xA;  huwSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_overlijdens" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_overlijdens as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;0 as ovlSleutelGeldigDatum,&#xD;&#xA;0 as ovlSleutelGeldigVolgnummer,&#xD;&#xA;ovlDatumOverlijden,&#xD;&#xA;ovlDatumOverlijdenIndicator,&#xD;&#xA;ovlPlaatsOverlijdenCode,&#xD;&#xA;ovlPlaatsOverlijdenOmschrijving,&#xD;&#xA;ovlLandOverlijdenCode,&#xD;&#xA;ovlLandOverlijdenOmschrijving,&#xD;&#xA;ovlRegistergemeenteAkteCode,&#xD;&#xA;ovlRegistergemeenteAkteOmschrijving,&#xD;&#xA;ovlAktenummer,&#xD;&#xA;ovlGemeenteDocumentCode,&#xD;&#xA;ovlGemeenteDocumentOmschrijving,&#xD;&#xA;ovlDatumDocument,&#xD;&#xA;ovlDatumDocumentIndicator,&#xD;&#xA;ovlBeschrijvingDocument,&#xD;&#xA;ovlAanduidingGegevensOnderzoek,&#xD;&#xA;ovlDatumIngangOnderzoek,&#xD;&#xA;ovlDatumIngangOnderzoekIndicator,&#xD;&#xA;ovlDatumEindeOnderzoek,&#xD;&#xA;ovlDatumEindeOnderzoekIndicator,&#xD;&#xA;ovlIngangsdatumGeldigheid,&#xD;&#xA;ovlIngangsdatumGeldigheidIndicator,&#xD;&#xA;ovlDatumVanOpneming,&#xD;&#xA;ovlDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;ovlhstSleutelGeldigDatum as ovlSleutelGeldigDatum,&#xD;&#xA;ovlhstSleutelGeldigVolgnummer as ovlSleutelGeldigVolgnummer,&#xD;&#xA;ovlhstDatumOverlijden as ovlDatumOverlijden,&#xD;&#xA;ovlhstDatumOverlijdenIndicator as ovlDatumOverlijdenIndicator,&#xD;&#xA;ovlhstPlaatsOverlijdenCode as ovlPlaatsOverlijdenCode,&#xD;&#xA;ovlhstPlaatsOverlijdenOmschrijving as ovlPlaatsOverlijdenOmschrijving,&#xD;&#xA;ovlhstLandOverlijdenCode as ovlLandOverlijdenCode,&#xD;&#xA;ovlhstLandOverlijdenOmschrijving as ovlLandOverlijdenOmschrijving,&#xD;&#xA;ovlhstRegistergemeenteAkteCode as ovlRegistergemeenteAkteCode,&#xD;&#xA;ovlhstRegistergemeenteAkteOmschrijving as ovlRegistergemeenteAkteOmschrijving,&#xD;&#xA;ovlhstAktenummer as ovlAktenummer,&#xD;&#xA;ovlhstGemeenteDocumentCode as ovlGemeenteDocumentCode,&#xD;&#xA;ovlhstGemeenteDocumentOmschrijving as ovlGemeenteDocumentOmschrijving,&#xD;&#xA;ovlhstDatumDocument as ovlDatumDocument,&#xD;&#xA;ovlhstDatumDocumentIndicator as vlDatumDocumentIndicator,&#xD;&#xA;ovlhstBeschrijvingDocument as ovlBeschrijvingDocument,&#xD;&#xA;ovlhstAanduidingGegevensOnderzoek as ovlAanduidingGegevensOnderzoek,&#xD;&#xA;ovlhstDatumIngangOnderzoek as ovlDatumIngangOnderzoek,&#xD;&#xA;ovlhstDatumIngangOnderzoekIndicator as ovlDatumIngangOnderzoekIndicator,&#xD;&#xA;ovlhstDatumEindeOnderzoek as ovlDatumEindeOnderzoek,&#xD;&#xA;ovlhstDatumEindeOnderzoekIndicator as ovlDatumEindeOnderzoekIndicator,&#xD;&#xA;ovlhstIngangsdatumGeldigheid as ovlIngangsdatumGeldigheid,&#xD;&#xA;ovlhstIngangsdatumGeldigheidIndicator as ovlIngangsdatumGeldigheidIndicator,&#xD;&#xA;ovlhstDatumVanOpneming as ovlDatumVanOpneming,&#xD;&#xA;ovlhstDatumVanOpnemingIndicator as ovlDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_overlijden_historie&#xD;&#xA;order by prsAnummer, ovlSleutelGeldigDatum, ovlSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_6"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_verblijfplaatsen" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_verblijfplaatsen as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;0 as vblSleutelGeldigDatum,&#xD;&#xA;0 as vblSleutelGeldigVolgnummer,&#xD;&#xA;vblGemeenteVanInschrijvingCode,&#xD;&#xA;vblGemeenteVanInschrijvingOmschrijving,&#xD;&#xA;vblDatumInschrijving,&#xD;&#xA;vblDatumInschrijvingIndicator,&#xD;&#xA;vblFunctieAdres,&#xD;&#xA;vblGemeentedeel,&#xD;&#xA;vblDatumAanvangAdreshouding,&#xD;&#xA;vblDatumAanvangAdreshoudingIndicator,&#xD;&#xA;vblStraatnaam,&#xD;&#xA;vblNaamOpenbareRuimte,&#xD;&#xA;vblAdresOpgemaakt,&#xD;&#xA;vblWoonplaatsOpgemaakt,&#xD;&#xA;vblHuisnummer,&#xD;&#xA;vblHuisletter,&#xD;&#xA;vblHuisnummertoevoeging,&#xD;&#xA;vblAanduidingBijHuisnummer,&#xD;&#xA;vblPostcode,&#xD;&#xA;vblWoonplaatsnaam,&#xD;&#xA;vblIdentificatiecodeVerblijfplaats,&#xD;&#xA;vblIdentificatiecodeNummeraanduiding,&#xD;&#xA;vblLocatiebeschrijving,&#xD;&#xA;vblLandAdresBuitenlandCode,&#xD;&#xA;vblLandAdresBuitenlandOmschrijving,&#xD;&#xA;vblDatumAanVangAdresBuitenland,&#xD;&#xA;vblDatumAanVangAdresBuitenlandIndicator,&#xD;&#xA;vblRegel1AdresBuitenland,&#xD;&#xA;vblRegel2AdresBuitenland,&#xD;&#xA;vblRegel3AdresBuitenland,&#xD;&#xA;vblLandVanwaarIngeschrevenCode,&#xD;&#xA;vblLandVanwaarIngeschrevenOmschrijving,&#xD;&#xA;vblDatumVestigingInNederland,&#xD;&#xA;vblDatumVestigingInNederlandIndicator,&#xD;&#xA;vblOmschrijvingVanAangifteAdreshouding,&#xD;&#xA;vblIndicatieDocument,&#xD;&#xA;vblAanduidingGegevensOnderzoek,&#xD;&#xA;vblDatumIngangOnderzoek,&#xD;&#xA;vblDatumIngangOnderzoekIndicator,&#xD;&#xA;vblDatumEindeOnderzoek,&#xD;&#xA;vblDatumEindeOnderzoekIndicator,&#xD;&#xA;vblIngangsdatumGeldigheid,&#xD;&#xA;vblIngangsdatumGeldigheidIndicator,&#xD;&#xA;vblDatumVanOpneming,&#xD;&#xA;vblDatumVanOpnemingIndicator,&#xD;&#xA;vblWijkCode,&#xD;&#xA;vblWijkOmschrijving,&#xD;&#xA;vblPlanalogischeWijkCode,&#xD;&#xA;vblPlanalogischeWijkOmschrijving&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;vblhstSleutelGeldigDatum as vblSleutelGeldigDatum,&#xD;&#xA;vblhstSleutelGeldigVolgnummer as vblSleutelGeldigVolgnummer,&#xD;&#xA;vblhstGemeenteVanInschrijvingCode as vblGemeenteVanInschrijvingCode,&#xD;&#xA;vblhstGemeenteVanInschrijvingOmschrijving as vblGemeenteVanInschrijvingOmschrijving,&#xD;&#xA;vblhstDatumInschrijving as vblDatumInschrijving,&#xD;&#xA;vblhstDatumInschrijvingIndicator as vblDatumInschrijvingIndicator,&#xD;&#xA;vblhstFunctieAdres as vblFunctieAdres,&#xD;&#xA;vblhstGemeentedeel as vblGemeentedeel,&#xD;&#xA;vblhstDatumAanvangAdreshouding as vblDatumAanvangAdreshouding,&#xD;&#xA;vblhstDatumAanvangAdreshoudingIndicator as vblDatumAanvangAdreshoudingIndicator,&#xD;&#xA;vblhstStraatnaam as vblStraatnaam,&#xD;&#xA;vblhstNaamOpenbareRuimte as vblNaamOpenbareRuimte,&#xD;&#xA;vblhstAdresOpgemaakt as vblAdresOpgemaakt,&#xD;&#xA;vblhstWoonplaatsOpgemaakt as vblWoonplaatsOpgemaakt,&#xD;&#xA;vblhstHuisnummer as vblHuisnummer,&#xD;&#xA;vblhstHuisletter as vblHuisletter,&#xD;&#xA;vblhstHuisnummertoevoeging as vblHuisnummertoevoeging,&#xD;&#xA;vblhstAanduidingBijHuisnummer as vblAanduidingBijHuisnummer,&#xD;&#xA;vblhstPostcode as vblPostcode,&#xD;&#xA;vblhstWoonplaatsnaam as vblWoonplaatsnaam,&#xD;&#xA;vblhstIdentificatiecodeVerblijfplaats as vblIdentificatiecodeVerblijfplaats,&#xD;&#xA;vblhstIdentificatiecodeNummeraanduiding as vblIdentificatiecodeNummeraanduiding,&#xD;&#xA;vblhstLocatiebeschrijving as vblLocatiebeschrijving,&#xD;&#xA;vblhstLandAdresBuitenlandCode as vblLandAdresBuitenlandCode,&#xD;&#xA;vblhstLandAdresBuitenlandOmschrijving as vblLandAdresBuitenlandOmschrijving,&#xD;&#xA;vblhstDatumAanVangAdresBuitenland as vblDatumAanVangAdresBuitenland,&#xD;&#xA;vblhstDatumAanVangAdresBuitenlandIndicator as vblDatumAanVangAdresBuitenlandIndicator,&#xD;&#xA;vblhstRegel1AdresBuitenland as vblRegel1AdresBuitenland,&#xD;&#xA;vblhstRegel2AdresBuitenland as vblRegel2AdresBuitenland,&#xD;&#xA;vblhstRegel3AdresBuitenland as vblRegel3AdresBuitenland,&#xD;&#xA;vblhstLandVanwaarIngeschrevenCode as vblLandVanwaarIngeschrevenCode,&#xD;&#xA;vblhstLandVanwaarIngeschrevenOmschrijving as vblLandVanwaarIngeschrevenOmschrijving,&#xD;&#xA;vblhstDatumVestigingInNederland as vblDatumVestigingInNederland,&#xD;&#xA;vblhstDatumVestigingInNederlandIndicator as vblDatumVestigingInNederlandIndicator,&#xD;&#xA;vblhstOmschrijvingVanAangifteAdreshouding as vblOmschrijvingVanAangifteAdreshouding,&#xD;&#xA;vblhstIndicatieDocument as vblIndicatieDocument,&#xD;&#xA;vblhstAanduidingGegevensOnderzoek as vblAanduidingGegevensOnderzoek,&#xD;&#xA;vblhstDatumIngangOnderzoek as vblDatumIngangOnderzoek,&#xD;&#xA;vblhstDatumIngangOnderzoekIndicator as vblDatumIngangOnderzoekIndicator,&#xD;&#xA;vblhstDatumEindeOnderzoek as vblDatumEindeOnderzoek,&#xD;&#xA;vblhstDatumEindeOnderzoekIndicator as vblDatumEindeOnderzoekIndicator,&#xD;&#xA;vblhstIngangsdatumGeldigheid as vblIngangsdatumGeldigheid,&#xD;&#xA;vblhstIngangsdatumGeldigheidIndicator as vblIngangsdatumGeldigheidIndicator,&#xD;&#xA;vblhstDatumVanOpneming as vblDatumVanOpneming,&#xD;&#xA;vblhstDatumVanOpnemingIndicator as vblDatumVanOpnemingIndicator,&#xD;&#xA;vblhstWijkCode as vblWijkCode,&#xD;&#xA;vblhstWijkOmschrijving as vblWijkOmschrijving,&#xD;&#xA;vblhstPlanalogischeWijkCode as vblPlanalogischeWijkCode,&#xD;&#xA;vblhstPlanalogischeWijkOmschrijving as vblPlanalogischeWijkOmschrijving&#xD;&#xA;  from ldf.ibz_cip_verblijfplaats_historie&#xD;&#xA;order by prsAnummer, vblSleutelGeldigDatum, vblSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_7"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_kinderen" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_kinderen as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;kndSleutelDatum,&#xD;&#xA;kndSleutelVolgnummer,&#xD;&#xA;0 as kndSleutelGeldigDatum,&#xD;&#xA;0 as kndSleutelGeldigVolgnummer,&#xD;&#xA;kndAnummer,&#xD;&#xA;kndBurgerservicenummer,&#xD;&#xA;kndVoornamen,&#xD;&#xA;kndVoorletters,&#xD;&#xA;kndAdellijketitelCode,&#xD;&#xA;kndAdellijketitelOmschrijving,&#xD;&#xA;kndVoorvoegselGeslachtsnaam,&#xD;&#xA;kndGeslachtsnaam,&#xD;&#xA;kndNaamOpgemaakt,&#xD;&#xA;kndGeboortedatum,&#xD;&#xA;kndGeboortedatumIndicator,&#xD;&#xA;kndGeboorteplaatsCode,&#xD;&#xA;kndGeboorteplaatsOmschrijving,&#xD;&#xA;kndGeboortelandCode,&#xD;&#xA;kndGeboortelandOmschrijving,&#xD;&#xA;kndRegistergemeenteAkteCode,&#xD;&#xA;kndRegistergemeenteAkteOmschrijving,&#xD;&#xA;kndAktenummer,&#xD;&#xA;kndGemeenteDocumentCode,&#xD;&#xA;kndGemeenteDocumentOmschrijving,&#xD;&#xA;kndDatumDocument,&#xD;&#xA;kndDatumDocumentIndicator,&#xD;&#xA;kndBeschrijvingDocument,&#xD;&#xA;kndAanduidingGegevensOnderzoek,&#xD;&#xA;kndDatumIngangOnderzoek,&#xD;&#xA;kndDatumIngangOnderzoekIndicator,&#xD;&#xA;kndDatumEindeOnderzoek,&#xD;&#xA;kndDatumEindeOnderzoekIndicator,&#xD;&#xA;kndIngangsdatumGeldigheid,&#xD;&#xA;kndIngangsdatumGeldigheidIndicator,&#xD;&#xA;kndDatumVanOpneming,&#xD;&#xA;kndDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_kind union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;kndhstSleutelDatum as kndSleutelDatum,&#xD;&#xA;kndhstSleutelVolgnummer as kndSleutelVolgnummer,&#xD;&#xA;kndhstSleutelGeldigDatum as kndSleutelGeldigDatum,&#xD;&#xA;kndhstSleutelGeldigVolgnummer as kndSleutelGeldigVolgnummer,&#xD;&#xA;kndhstAnummer as kndAnummer,&#xD;&#xA;kndhstBurgerservicenummer as kndBurgerservicenummer,&#xD;&#xA;kndhstVoornamen as kndVoornamen,&#xD;&#xA;kndhstVoorletters as kndVoorletters,&#xD;&#xA;kndhstAdellijketitelCode as kndAdellijketitelCode,&#xD;&#xA;kndhstAdellijketitelOmschrijving as kndAdellijketitelOmschrijving,&#xD;&#xA;kndhstVoorvoegselGeslachtsnaam as kndVoorvoegselGeslachtsnaam,&#xD;&#xA;kndhstGeslachtsnaam as kndGeslachtsnaam,&#xD;&#xA;null as kndNaamOpgemaakt,&#xD;&#xA;kndhstGeboortedatum as kndGeboortedatum,&#xD;&#xA;kndhstGeboortedatumIndicator as kndGeboortedatumIndicator,&#xD;&#xA;kndhstGeboorteplaatsCode as kndGeboorteplaatsCode,&#xD;&#xA;kndhstGeboorteplaatsOmschrijving as kndGeboorteplaatsOmschrijving,&#xD;&#xA;kndhstGeboortelandCode as kndGeboortelandCode,&#xD;&#xA;kndhstGeboortelandOmschrijving as kndGeboortelandOmschrijving,&#xD;&#xA;kndhstRegistergemeenteAkteCode as kndRegistergemeenteAkteCode,&#xD;&#xA;kndhstRegistergemeenteAkteOmschrijving as kndRegistergemeenteAkteOmschrijving,&#xD;&#xA;kndhstAktenummer as kndAktenummer,&#xD;&#xA;kndhstGemeenteDocumentCode as kndGemeenteDocumentCode,&#xD;&#xA;kndhstGemeenteDocumentOmschrijving as kndGemeenteDocumentOmschrijving,&#xD;&#xA;kndhstDatumDocument as kndDatumDocument,&#xD;&#xA;kndhstDatumDocumentIndicator as kndDatumDocumentIndicator,&#xD;&#xA;kndhstBeschrijvingDocument as kndBeschrijvingDocument,&#xD;&#xA;kndhstAanduidingGegevensOnderzoek as kndAanduidingGegevensOnderzoek,&#xD;&#xA;kndhstDatumIngangOnderzoek as kndDatumIngangOnderzoek,&#xD;&#xA;kndhstDatumIngangOnderzoekIndicator as kndDatumIngangOnderzoekIndicator,&#xD;&#xA;kndhstDatumEindeOnderzoek as kndDatumEindeOnderzoek,&#xD;&#xA;kndhstDatumEindeOnderzoekIndicator as kndDatumEindeOnderzoekIndicator,&#xD;&#xA;kndhstIngangsdatumGeldigheid as kndIngangsdatumGeldigheid,&#xD;&#xA;kndhstIngangsdatumGeldigheidIndicator as kndIngangsdatumGeldigheidIndicator,&#xD;&#xA;kndhstDatumVanOpneming as kndDatumVanOpneming,&#xD;&#xA;kndhstDatumVanOpnemingIndicator as kndDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_kind_historie&#xD;&#xA;order by prsAnummer, kndSleutelDatum, kndSleutelVolgnummer, kndSleutelGeldigDatum,&#xA;  kndSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_8"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_9" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_verblijfstitels" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_verblijfstitels as&#xD;&#xA;select&#xD;&#xA;prsAnummer,&#xD;&#xA;0 as vbtSleutelGeldigDatum,&#xD;&#xA;0 as vbtSleutelGeldigVolgnummer,&#xD;&#xA;vbtAanduidingVerblijfstitelCode,&#xD;&#xA;vbtVerblijfstitelVervallen,&#xD;&#xA;vbtAanduidingVerblijfstitelOmschrijving,&#xD;&#xA;vbtDatumEindeVerblijfstitel,&#xD;&#xA;vbtDatumEindeVerblijfstitelIndicator,&#xD;&#xA;vbtIngangsdatumVerblijfstitel,&#xD;&#xA;vbtIngangsdatumVerblijfstitelIndicator,&#xD;&#xA;vbtAanduidingGegevensOnderzoek,&#xD;&#xA;vbtDatumIngangOnderzoek,&#xD;&#xA;vbtDatumIngangOnderzoekIndicator,&#xD;&#xA;vbtDatumEindeOnderzoek,&#xD;&#xA;vbtDatumEindeOnderzoekIndicator,&#xD;&#xA;vbtIngangsdatumGeldigheid,&#xD;&#xA;vbtIngangsdatumGeldigheidIndicator,&#xD;&#xA;vbtDatumVanOpneming,&#xD;&#xA;vbtDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;vbthstSleutelGeldigDatum as vbtSleutelGeldigDatum,&#xD;&#xA;vbthstSleutelGeldigVolgnummer as vbtSleutelGeldigVolgnummer,&#xD;&#xA;vbthstAanduidingVerblijfstitelCode as vbtAanduidingVerblijfstitelCode,&#xD;&#xA;vbthstVerblijfstitelVervallen as vbtVerblijfstitelVervallen,&#xD;&#xA;vbthstAanduidingVerblijfstitelOmschrijving as vbtAanduidingVerblijfstitelOmschrijving,&#xD;&#xA;vbthstDatumEindeVerblijfstitel as vbtDatumEindeVerblijfstitel,&#xD;&#xA;vbthstDatumEindeVerblijfstitelIndicator as vbtDatumEindeVerblijfstitelIndicator,&#xD;&#xA;vbthstIngangsdatumVerblijfstitel as vbtIngangsdatumVerblijfstitel,&#xD;&#xA;vbthstIngangsdatumVerblijfstitelIndicator as vbtIngangsdatumVerblijfstitelIndicator,&#xD;&#xA;vbthstAanduidingGegevensOnderzoek as vbtAanduidingGegevensOnderzoek,&#xD;&#xA;vbthstDatumIngangOnderzoek as vbtDatumIngangOnderzoek,&#xD;&#xA;vbthstDatumIngangOnderzoekIndicator as vbtDatumIngangOnderzoekIndicator,&#xD;&#xA;vbthstDatumEindeOnderzoek as vbtDatumEindeOnderzoek,&#xD;&#xA;vbthstDatumEindeOnderzoekIndicator as vbtDatumEindeOnderzoekIndicator,&#xD;&#xA;vbthstIngangsdatumGeldigheid as vbtIngangsdatumGeldigheid,&#xD;&#xA;vbthstIngangsdatumGeldigheidIndicator as vbtIngangsdatumGeldigheidIndicator,&#xD;&#xA;vbthstDatumVanOpneming as vbtDatumVanOpneming,&#xD;&#xA;vbthstDatumVanOpnemingIndicator as vbtDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_verblijfstitel_historie&#xD;&#xA;order by prsAnummer, vbtSleutelGeldigDatum, vbtSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_9"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_10" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mks_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mks_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mks_database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ldf&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mks_owner&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="CwrSoVpRdWp2KfLPeBxhZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_5EwbYCaxEei4p-mUqvfZ2w - ibz_ldf_create_view_gezagsverhoudingen" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create view ldf.ibz_cip_view_gezagsverhoudingen as&#xD;&#xA;select &#xD;&#xA;prsAnummer,&#xD;&#xA;0 as gzvSleutelGeldigDatum,&#xD;&#xA;0 as gzvSleutelGeldigVolgnummer,&#xD;&#xA;gzvIndicatieGezagMinderjarige,&#xD;&#xA;gzvIndicatieCurateleregister,&#xD;&#xA;gzvGemeenteDocumentCode,&#xD;&#xA;gzvGemeenteDocumentOmschrijving,&#xD;&#xA;gzvDatumDocument,&#xD;&#xA;gzvDatumDocumentIndicator,&#xD;&#xA;gzvBeschrijvingDocument,&#xD;&#xA;gzvAanduidingGegevensOnderzoek,&#xD;&#xA;gzvDatumIngangOnderzoek,&#xD;&#xA;gzvDatumIngangOnderzoekIndicator,&#xD;&#xA;gzvDatumEindeOnderzoek,&#xD;&#xA;gzvDatumEindeOnderzoekIndicator,&#xD;&#xA;gzvIngangsdatumGeldigheid,&#xD;&#xA;gzvIngangsdatumGeldigheidIndicator,&#xD;&#xA;gzvDatumVanOpneming,&#xD;&#xA;gzvDatumVanOpnemingIndicator&#xD;&#xA;  from ldf.ibz_cip_persoon union all&#xD;&#xA;select   &#xD;&#xA;prsAnummer,&#xD;&#xA;gzvhstSleutelGeldigDatum as gzvSleutelGeldigDatum,&#xD;&#xA;gzvhstSleutelGeldigVolgnummer as gzvSleutelGeldigVolgnummer,&#xD;&#xA;gzvhstIndicatieGezagMinderjarige as gzvIndicatieGezagMinderjarige,&#xD;&#xA;gzvhstIndicatieCurateleregister as gzvIndicatieCurateleregister,&#xD;&#xA;gzvhstGemeenteDocumentCode as gzvGemeenteDocumentCode,&#xD;&#xA;gzvhstGemeenteDocumentOmschrijving as gzvGemeenteDocumentOmschrijving,&#xD;&#xA;gzvhstDatumDocument as gzvDatumDocument,&#xD;&#xA;gzvhstDatumDocumentIndicator as gzvDatumDocumentIndicator,&#xD;&#xA;gzvhstBeschrijvingDocument as gzvBeschrijvingDocument,&#xD;&#xA;gzvhstAanduidingGegevensOnderzoek as gzvAanduidingGegevensOnderzoek,&#xD;&#xA;gzvhstDatumIngangOnderzoek as gzvDatumIngangOnderzoek,&#xD;&#xA;gzvhstDatumIngangOnderzoekIndicator as gzvDatumIngangOnderzoekIndicator,&#xD;&#xA;gzvhstDatumEindeOnderzoek as gzvDatumEindeOnderzoek,&#xD;&#xA;gzvhstDatumEindeOnderzoekIndicator as gzvDatumEindeOnderzoekIndicator,&#xD;&#xA;gzvhstIngangsdatumGeldigheid as gzvIngangsdatumGeldigheid,&#xD;&#xA;gzvhstIngangsdatumGeldigheidIndicator as gzvIngangsdatumGeldigheidIndicator,&#xD;&#xA;gzvhstDatumVanOpneming as gzvDatumVanOpneming,&#xD;&#xA;gzvhstDatumVanOpnemingIndicator as gzvDatumVanOpnemingIndicator&#xD;&#xA;  from  ldf.ibz_cip_gezagsverhouding_historie&#xD;&#xA;order by prsAnummer, gzvSleutelGeldigDatum, gzvSleutelGeldigVolgnummer&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_10"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="mks" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tContextLoad_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="mks" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tContextLoad_2" offsetLabelX="0" offsetLabelY="0" source="tContextLoad_2" target="tPostgresqlRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_1" target="tPostgresqlRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_2" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_2" target="tPostgresqlRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_3" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_3" target="tPostgresqlRow_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_4" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_4" target="tPostgresqlRow_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_5" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_5" target="tPostgresqlRow_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_6" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_6" target="tPostgresqlRow_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_7" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_7" target="tPostgresqlRow_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk9" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_8" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_8" target="tPostgresqlRow_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_9" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_9" target="tPostgresqlRow_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk11" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view personen"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view ouders1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view ouders2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_4" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view nationaliteiten"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_5" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view huwelijken"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_6" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view overlijdens"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_7" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view verblijfplaatsen"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_8" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view kinderen"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_9" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view verblijfstitels"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_10" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="create view gezagsverhoudingen"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
