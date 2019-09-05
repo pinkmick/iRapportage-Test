@@ -2,6 +2,7 @@ echo off
 rem get the correct path from the called program
 SET ibzpath=%~dp0
 rem define a logfile and date-stamp
+rem deze moet aangepast worden
 for /F "tokens=2" %%i in ('date /t') do set mydate=%%i
 SET LogFile=%ibzpath%..\..\..\..\CirCooNodejs\log\iRapportage.log.%mydate%
 if exist %LogFile% (
